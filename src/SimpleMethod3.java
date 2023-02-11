@@ -16,25 +16,23 @@ public class SimpleMethod3 {
           the arguments correctly and cast upon return.
      */
     public static int square(int number) {
-        // Put your code here
-        return 0;
-    }
+        return (int) Math.pow(number, 2);// Put your code here
+            }
 
     public static double square(double number) {
-        // Put your code here
-        return 0;
+        return Math.pow(number, 2);// Put your code here
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("What number would you like to square: ");
+        System.out.print("Enter a number and we'll get that squared away for you: ");
         /* Integers Used */
         int input = Integer.valueOf(scanner.nextLine());
         int result = square(input);
         System.out.printf("The square of %d is %d%n", input, result);
 
-        System.out.print("What number would you like to square: ");
+        System.out.print("Let's square that again: ");
         /* Doubles used  */
         double input2 = Double.valueOf(scanner.nextLine());
         double result2 = square(input2);
